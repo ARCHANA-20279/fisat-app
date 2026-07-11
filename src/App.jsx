@@ -6,15 +6,20 @@ import './App.css'
 import Add from './component/Add'
 import Search from './component/Search'
 import Delete from './component/Delete'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Add />
-      <Search />
-      <Delete />
+      <BrowserRouter> 
+      <Routes> 
+        <Route path='/' element={<Add />}/>
+        <Route path='/delete' element={<Delete />}/>
+        <Route path='/search' element={<Search />}/>
+      </Routes>
+        </BrowserRouter>
     </>
   )
 }
