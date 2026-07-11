@@ -1,11 +1,12 @@
 import React from 'react'
 
-const Search = () => {
+function Search() {
   return (
     <div>
 
-
-        <h1>Search student</h1>
+        <h1>
+            Serch
+        </h1>
     </div>
   )
 }
