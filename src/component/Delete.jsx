@@ -1,14 +1,14 @@
 import React from 'react'
 
-function Search() {
+function Delete() {
   return (
     <div>
 
         <h1>
-            Serch
+            delete
         </h1>
     </div>
   )
 }
 
-export default Search
+export default Delete
